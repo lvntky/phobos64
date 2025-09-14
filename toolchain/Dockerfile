@@ -37,6 +37,8 @@ RUN apt-get update && apt-get install -y \
     mtools \
     parted \
     qemu-system-x86 \
+    git \
+    xorriso \
   && rm -rf /var/lib/apt/lists/*
 
 # 2) Sources
