@@ -1,0 +1,125 @@
+# Phobos64 OS - Git Ignore Rules
+
+# Build artifacts
+build/
+*.o
+*.elf
+*.bin
+*.img
+*.iso
+
+# Limine bootloader (auto-downloaded)
+limine/
+
+# Toolchain artifacts (if using native build)
+/toolchain-build/
+cross-compiler/
+
+# Object files and libraries
+*.a
+*.so
+*.dylib
+*.lib
+
+# Debug symbols
+*.dSYM/
+*.su
+*.idb
+*.pdb
+
+# Kernel dumps and logs
+*.dump
+*.log
+kernel.map
+System.map
+
+# QEMU generated files
+qemu.log
+serial.log
+
+# Editor and IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.#*
+\#*#
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.temp
+/tmp/
+
+# Documentation build
+docs/_build/
+docs/html/
+*.pdf
+
+# Code coverage
+*.gcov
+*.gcda
+*.gcno
+coverage/
+
+# Profiling
+gmon.out
+perf.data*
+
+# Backup files
+*.bak
+*.backup
+*.orig
+
+# Archive files (unless specifically needed)
+*.tar
+*.tar.gz
+*.tar.bz2
+*.tar.xz
+*.zip
+*.7z
+
+# Local environment
+.env
+.env.local
+
+# Test results
+test-results/
+*.junit
+
+# Cache directories
+.cache/
+node_modules/
+
+# Auto-generated files
+version.h
+build_info.h
+
+# Disk images and filesystem dumps
+*.vdi
+*.vmdk
+*.qcow2
+rootfs.tar
+initrd.img
+
+# Development tools output
+tags
+TAGS
+cscope.*
+
+# User-specific files
+TODO.local
+NOTES.local
+*.local
+
+*.conf
+include/limine.h
